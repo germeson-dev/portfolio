@@ -80,7 +80,8 @@ nav ul li a:hover::after{
     margin-top: 20%;
     font-size: 30px;
     position: absolute;
-    padding-left: 10% 
+    padding-left: 10%;
+    font-weight: bold;
 
 }
 
@@ -97,7 +98,8 @@ nav ul li a:hover::after{
     margin-top: 30px;
     font-size: 28px;
     color: #EFF0F4;
-    font-style:italic
+    font-style:italic;
+    font-weight: normal;
 }
 
 #about{
@@ -189,3 +191,66 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+#services{
+    padding: 30px 0;
+    padding: 0 10%
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.sub-title-about {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 15%;
+}
+
+.services-list div{
+    background: #262626;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 13px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover{
+    background: #1888F3;
+    cursor: pointer;
+    transform: translateY(-10px);
+}    
+.svg-inline--fa{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;    
+}
+
+.services-list div a:hover{
+    
+
+    
+    
+}
+
+.services-list div p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
