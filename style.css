@@ -107,18 +107,19 @@ nav ul li a:hover::after{
 
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     flex-wrap: wrap;
 }
 
 .about-col-1{
     flex-basis: 35%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     padding-left: 70px;
 }
 
 .about-col-1 img{
-    width: 70%;
+    width: 85%;
+    margin-top: 23%;
 }
 
 .about-col-2{
