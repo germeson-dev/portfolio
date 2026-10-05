@@ -25,6 +25,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;    
+    z-index: 9;
 }
 
 .logo{
