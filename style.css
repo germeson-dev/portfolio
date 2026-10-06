@@ -246,4 +246,77 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
+.container-project{
+    padding: 5% 10% 0 10%;
+}
 
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.work:hover img{
+    filter: brightness(20%);
+    transform: scale(1.4);
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 40px;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.work:hover .layer{
+    height: 100%
+}
+.layer h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 120px;
+}
+
+.layer a{
+    margin-top: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+ion-icon {
+   color:#1888F3;
+   font-size: 22px
+}
