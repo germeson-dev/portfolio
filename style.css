@@ -349,3 +349,92 @@ ion-icon {
    font-size: 22px
 }
 
+.contact-left{
+    padding-top: 10%;
+}
+
+.contact-right{
+    flex-basis: 40%;
+}
+
+.contact-left p{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left p a{
+    color: #ababab;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-left p a:hover{
+    color: #1888F3;
+}
+
+.social-icons{
+    margin: 50px 0;
+}
+
+.svg-inline--fa{
+    font-size: 45px;
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #ababab;
+    text-decoration: none;
+    transition: transform 0.5s;
+
+}
+
+.svg-inline--fa:hover{
+    color: #1888F3;
+    transform: translateY(-5px); 
+}
+
+.contact-right form{
+    width: 100%;
+    padding-top: 30%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    margin: 15px 0;
+    padding: 15px 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.row-contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn-form{
+    display: block;
+    margin-left: 10px;
+    width: fit-content;
+    border: 1px solid #1888F3;
+    padding: 14px 50px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    background: #1888F3;;
+    font-size: 18px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btn-form:hover{
+    background: #000;
+    color: #1888F3;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
