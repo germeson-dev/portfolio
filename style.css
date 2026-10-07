@@ -102,6 +102,34 @@ nav ul li a:hover::after{
     font-weight: normal;
 }
 
+.header-contact{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.btn-project{
+    display: block;
+    margin-left: 10px;
+    width: fit-content;
+    border: 1px solid #1888F3;
+    padding: 14px 50px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btn-project:hover{
+    background: #1888F3;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -320,3 +348,4 @@ ion-icon {
    color:#1888F3;
    font-size: 22px
 }
+
