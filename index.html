@@ -26,7 +26,7 @@
                 <p class="headline">Transformando ideias em soluções reais.</p>
                 <div class="header-contact">
                     <a href="#project" class="btn-project">Ver Projetos</a>
-                    <a href="#contact" class="btn-project">Fazer Orçamento</a>
+                    <a href="#contact" class="btn-project">Fazer Orçamento gratuito</a>
                 </div>
             </div>
     </main>
@@ -148,11 +148,11 @@
                     <a href="assets/Germeson_Martins_Front-End_Developer.pdf" download class="btn-project">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form action="https://formspree.io/f/xqpeelep" method="post">
-                        <input type="text" name="name" placeholder="Seu nome" required/>
-                        <input type="email" name="email" placeholder="Seu e-mail@dominio.com" required/>
-                        <textarea name="message" rows="10" placeholder="Olá! Como posso ajudar?" required></textarea>
-                        <button class="btn-form" type="submit">Enviar</button>
+                    <form id="form" onsubmit="envwpp(event)">
+                        <input type="text" name="name" id="nome" placeholder="Seu nome" required/>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail@dominio.com" required/>
+                        <textarea name="message" rows="10" id="message" placeholder="Olá! Como posso ajudar?" required></textarea>
+                        <button class="btn-form" type="submit">Enviar WhatsApp</button>
                     </form>
                 </div>
             </div>
