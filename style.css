@@ -20,6 +20,7 @@ nav{
     padding: 10px 10%;
     display: flex;
     background-color: #000;
+    border-bottom: 1px solid #4a91d3;
     position: fixed;
     top: 0;
     align-items: center;
@@ -64,6 +65,74 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+/* SlideBar */
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #000;
+    margin: 8px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 14px;
+    display: none;
+    z-index: 9;
+}
+
+.nav-button i{
+    color: #fff;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    z-index: 9;
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.overlay-content{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 28px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.overlay a:hover{
+    color: #1888F3;
+    
+}
+.overlay a:active{
+    color: #1888F3;
+}
+
+.overlay a:focus{
+    color: #1888F3;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    font-size: 60px;
+}
+
 
 .container{
     width: 100%;
@@ -252,10 +321,6 @@ nav ul li a:hover::after{
     cursor: pointer;
     transform: translateY(-10px);
 }    
-.svg-inline--fa{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
 
 .services-list div h2{
     font-size: 30px;
@@ -344,11 +409,6 @@ nav ul li a:hover::after{
     text-decoration: none;
 }
 
-ion-icon {
-   color:#1888F3;
-   font-size: 22px
-}
-
 .contact-left{
     padding-top: 10%;
 }
@@ -378,7 +438,7 @@ ion-icon {
     margin: 50px 0;
 }
 
-.svg-inline--fa{
+/* .svg-inline--fa{
     font-size: 45px;
     margin-right: 15px;
     display: inline-block;
@@ -387,12 +447,12 @@ ion-icon {
     text-decoration: none;
     transition: transform 0.5s;
 
-}
+} */
 
-.svg-inline--fa:hover{
+/* .svg-inline--fa:hover{
     color: #1888F3;
     transform: translateY(-5px); 
-}
+} */
 
 .contact-right form{
     width: 100%;
@@ -456,4 +516,15 @@ footer p{
 
 footer img{
     width: 150px;
+}
+
+@media screen and (max-width: 1024px){
+    nav ul{
+        display: none;
+    }
+
+    .nav-button{
+        display: block;
+    }
+ 
 }

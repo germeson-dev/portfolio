@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -10,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Germeson Martins | Full Stack Developer</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -21,18 +24,34 @@
                 <li><a href="#project">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            </nav>
+        </nav>
+  
+        <aside>
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <div class="overlay-content">
+                <a href="#home" onclick="closeNav()">Home</a>
+                <a href="#about" onclick="closeNav()">Sobre</a>
+                <a href="#services" onclick="closeNav()">Serviços</a>
+                <a href="#project" onclick="closeNav()">Projetos</a>
+                <a href="#contact" onclick="closeNav()">Contatos</a>
+            </div>
+        </div>
+            <button class="nav-button" onclick="openNav()"><i class="fa-solid fa-bars fa-2x"></i></button>
+        </aside>
+
     </header>
     <main id="home" class="container container-bgd">
-            <div class="header-text">
-                <p>Desenvolvedor Full Stack</p>
-                <h1>Olá, sou o <span>Germeson</span>!<br></h1>
-                <p class="headline">Transformando ideias em soluções reais.</p>
-                <div class="header-contact">
-                    <a href="#project" class="btn-project">Ver Projetos</a>
-                    <a href="#contact" class="btn-project">Fazer Orçamento gratuito</a>
-                </div>
+        <div class="header-text">
+            <p>Desenvolvedor Full Stack</p>
+            <h1>Olá, sou o <span>Germeson</span>!<br></h1>
+            <p class="headline">Transformando ideias em soluções reais.</p>
+            <div class="header-contact">
+                <a href="#project" class="btn-project">Ver Projetos</a>
+                <a href="#contact" class="btn-project">Fazer Orçamento gratuito</a>
             </div>
+        </div>
     </main>
 
     <section id="about">
@@ -42,11 +61,20 @@
                     <img src="assets/foto-perfil-fundo.png" alt="foto-perfil-sobre" title="Foto | Germeson Martins">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title" >Sobre</h1>
-                    <p>Me chamo Germeson Martins, sou mineiro e apaixonado por tecnologia desde a infância. Moro em São Paulo-SP desde 2019, onde venho construindo minha trajetória profissional e buscando constantemente novos desafios e oportunidades de crescimento. <br><br>
-                    Sou graduado em Análise e Desenvolvimento de Sistemas e tenho experiência profissional em suporte e infraestrutura de TI. Ao longo da minha trajetória na área de tecnologia, venho me capacitando em desenvolvimento de software e direcionando minha carreira para o desenvolvimento Full Stack.<br><br>
-                    Atualmente, desenvolvo conhecimentos em JavaScript, TypeScript, React, Node.js, REST APIs, HTML e CSS, aplicando boas práticas de desenvolvimento, pensamento analítico e aprendizado contínuo.<br><br>
-                    Busco evoluir constantemente minhas habilidades, transformar ideias e necessidades em soluções digitais e contribuir para projetos desafiadores, agregando valor às equipes e aos resultados.</p>
+                    <h1 class="sub-title">Sobre</h1>
+                    <p>Me chamo Germeson Martins, sou mineiro e apaixonado por tecnologia desde a infância. Moro em São
+                        Paulo-SP desde 2019, onde venho construindo minha trajetória profissional e buscando
+                        constantemente novos desafios e oportunidades de crescimento. <br><br>
+                        Sou graduado em Análise e Desenvolvimento de Sistemas e tenho experiência profissional em
+                        suporte e infraestrutura de TI. Ao longo da minha trajetória na área de tecnologia, venho me
+                        capacitando em desenvolvimento de software e direcionando minha carreira para o desenvolvimento
+                        Full Stack.<br><br>
+                        Atualmente, desenvolvo conhecimentos em JavaScript, TypeScript, React, Node.js, REST APIs, HTML
+                        e CSS, aplicando boas práticas de desenvolvimento, pensamento analítico e aprendizado
+                        contínuo.<br><br>
+                        Busco evoluir constantemente minhas habilidades, transformar ideias e necessidades em soluções
+                        digitais e contribuir para projetos desafiadores, agregando valor às equipes e aos resultados.
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -71,7 +99,8 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Full Stack PRO - Sujeito Programador</span><br>Especialização | 2025 - Atual</li>
-                            <li><span>Análise e Desenvolvimento de Sistemas - Estácio</span><br>Graduação | 2021 - 2024<br></li>
+                            <li><span>Análise e Desenvolvimento de Sistemas - Estácio</span><br>Graduação | 2021 -
+                                2024<br></li>
                         </ul>
                     </div>
                 </div>
@@ -86,22 +115,25 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Desenvolvimento Web</h2>
-                    <p>Criação de interfaces modernas, responsivas e intuitivas, utilizando HTML, CSS, JavaScript e React, com foco em boas práticas, acessibilidade e experiência do usuário.</p>
+                    <p>Criação de interfaces modernas, responsivas e intuitivas, utilizando HTML, CSS, JavaScript e
+                        React, com foco em boas práticas, acessibilidade e experiência do usuário.</p>
                     <a href="#">Saiba mais</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Criação de interfaces modernas, intuitivas e responsivas, aplicando princípios de UI/UX para proporcionar uma experiência clara, agradável e acessível.</p>
+                    <p>Criação de interfaces modernas, intuitivas e responsivas, aplicando princípios de UI/UX para
+                        proporcionar uma experiência clara, agradável e acessível.</p>
                     <a href="#">Saiba mais</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h2>Interfaces Mobile</h2>
-                    <p>Criação de interfaces modernas e responsivas para aplicativos, aplicando princípios de UI/UX para garantir usabilidade, consistência e uma boa experiência em diferentes dispositivos.</p>
+                    <p>Criação de interfaces modernas e responsivas para aplicativos, aplicando princípios de UI/UX para
+                        garantir usabilidade, consistência e uma boa experiência em diferentes dispositivos.</p>
                     <a href="#">Saiba mais</a>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -113,24 +145,33 @@
                     <img src="assets/project/demo-devburguer.png" alt="">
                     <div class="layer">
                         <h3>Dev burguer</h3>
-                        <p>Projeto desenvolvido para estudo, com a criação de uma Landing Page para uma lanchonete, aplicando conceitos de desenvolvimento web, responsividade e organização visual para proporcionar uma experiência moderna e intuitiva aos usuários.</p>
-                        <a href="https://devburguer-germeson-dev.vercel.app/" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+                        <p>Projeto desenvolvido para estudo, com a criação de uma Landing Page para uma lanchonete,
+                            aplicando conceitos de desenvolvimento web, responsividade e organização visual para
+                            proporcionar uma experiência moderna e intuitiva aos usuários.</p>
+                        <a href="https://devburguer-germeson-dev.vercel.app/" target="_blank"><ion-icon
+                                name="open-outline"></ion-icon></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="assets/project/demo-barber.png" alt="">
                     <div class="layer">
                         <h3>Barber Dev</h3>
-                        <p>Projeto desenvolvido para estudo, com a criação de uma Landing Page para uma barbearia, aplicando conceitos de desenvolvimento web, responsividade e organização visual para proporcionar uma experiência moderna e intuitiva aos usuários.</p>
-                        <a href="https://barber-germeson-dev.vercel.app/" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+                        <p>Projeto desenvolvido para estudo, com a criação de uma Landing Page para uma barbearia,
+                            aplicando conceitos de desenvolvimento web, responsividade e organização visual para
+                            proporcionar uma experiência moderna e intuitiva aos usuários.</p>
+                        <a href="https://barber-germeson-dev.vercel.app/" target="_blank"><ion-icon
+                                name="open-outline"></ion-icon></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="assets/project/demo-gerador-de-senha.png" alt="">
                     <div class="layer">
                         <h3>Gerador de Senha</h3>
-                        <p>Projeto desenvolvido para estudo, com o objetivo de criar um gerador de senhas aleatórias, permitindo ao usuário definir o tamanho dos caracteres. O projeto também trabalha conceitos de JavaScript, manipulação do DOM e interação com o usuário.</p>
-                        <a href="https://gerador-de-senha-germeson-dev.vercel.app/" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+                        <p>Projeto desenvolvido para estudo, com o objetivo de criar um gerador de senhas aleatórias,
+                            permitindo ao usuário definir o tamanho dos caracteres. O projeto também trabalha conceitos
+                            de JavaScript, manipulação do DOM e interação com o usuário.</p>
+                        <a href="https://gerador-de-senha-germeson-dev.vercel.app/" target="_blank"><ion-icon
+                                name="open-outline"></ion-icon></a>
                     </div>
                 </div>
             </div>
@@ -142,20 +183,27 @@
             <div class="row-contact">
                 <div class="contact-left">
                     <h1 class="sub-title">Entre em Contato</h1>
-                    <p><a href="mailto:germeson-dev@outlook.com"><i class="fa-solid fa-paper-plane"></i>germeson-dev@outlook.com</a></p>
-                    <p><a href="tel:+5511940547947"><i class="fa-solid fa-square-phone-flip"></i>+55 11 94054-7947</a></p>
+                    <p><a href="mailto:germeson-dev@outlook.com"><i
+                                class="fa-solid fa-paper-plane"></i>germeson-dev@outlook.com</a></p>
+                    <p><a href="tel:+5511940547947"><i class="fa-solid fa-square-phone-flip"></i>+55 11 94054-7947</a>
+                    </p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/germeson-dev/" title="Conecte comigo no LinkedIn" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
-                        <a href="https://github.com/germeson-dev/" title="Me siga no GitHub" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.instagram.com/germeson_dev/" title="Me siga no Instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/germeson-dev/" title="Conecte comigo no LinkedIn"
+                            target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                        <a href="https://github.com/germeson-dev/" title="Me siga no GitHub" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/germeson_dev/" title="Me siga no Instagram"
+                            target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     </div>
-                    <a href="assets/Germeson_Martins_Front-End_Developer.pdf" download class="btn-project">Download CV</a>
+                    <a href="assets/Germeson_Martins_Front-End_Developer.pdf" download class="btn-project">Download
+                        CV</a>
                 </div>
                 <div class="contact-right">
                     <form id="form" onsubmit="envwpp(event)">
-                        <input type="text" name="name" id="nome" placeholder="Seu nome" required/>
-                        <input type="email" name="email" id="email" placeholder="Seu e-mail@dominio.com" required/>
-                        <textarea name="message" rows="10" id="message" placeholder="Olá! Como posso ajudar?" required></textarea>
+                        <input type="text" name="name" id="nome" placeholder="Seu nome" required />
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail@dominio.com" required />
+                        <textarea name="message" rows="10" id="message" placeholder="Olá! Como posso ajudar?"
+                            required></textarea>
                         <button class="btn-form" type="submit">Enviar WhatsApp</button>
                     </form>
                 </div>
@@ -164,12 +212,18 @@
     </section>
     <footer>
         <a href="#home"><img src="assets/logo-fundo.png" alt="logo"></a>
-        <p>2026  &copy Todos os direitos reservados.</p>
+        <p>2026 &copy Todos os direitos reservados.</p>
     </footer>
 
-   <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-   <script src="https://kit.fontawesome.com/801db3d3f8.js" crossorigin="anonymous"></script>
-<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
-<script src="script.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/801db3d3f8.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+     -->
+    
+    
+    
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
