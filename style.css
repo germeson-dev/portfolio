@@ -103,13 +103,13 @@ nav ul li a:hover::after{
     position: relative;
     width: 100%;
     text-align: center;
-    top: 25%;
+    top: 18%;
 }
 
 .overlay a{
     padding: 8px;
     text-decoration: none;
-    color: #818181;
+    color: #ababab;
     display: block;
     font-size: 28px;
     margin-top: 30px;
@@ -129,7 +129,7 @@ nav ul li a:hover::after{
 }
 .overlay .closebtn{
     position: absolute;
-    top: 45px;
+    top: 0px;
     right: 45px;
     font-size: 60px;
 }
@@ -631,6 +631,24 @@ footer img{
 
     .nav-button{
         display: block;
+    }
+
+    .social-icons-lateral{
+        display: flex;
+        padding-top: 65%;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .social-icons-lateral i{
+        font-size: 25px;
+        color:#ababab;
+    }
+    .contact-lateral p a{
+        font-size: 10px;
+        
     }
 
     .header-inf{
