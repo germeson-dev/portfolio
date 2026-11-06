@@ -789,7 +789,7 @@ footer img{
 
 @media screen and (max-width: 440px){
     .social-icons-lateral{
-        padding-top: 320px;
+        padding-top: 180px;
     }
 
     .social-icons-lateral i{
@@ -808,7 +808,7 @@ footer img{
     }
 
     .social-icons i{
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .contact-right p{
@@ -826,3 +826,12 @@ footer img{
     
 }
 
+@media screen and (max-width: 375px){
+    .social-icons-lateral{
+        padding-top: 120px;
+    }
+
+    .social-icons-lateral i{
+        font-size: 35px;
+    }
+}
