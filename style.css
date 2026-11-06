@@ -594,7 +594,6 @@ footer img{
         flex-direction: column;
         width: 100%;
         margin-top: 45px;
-
     }
 
     .btn-project{
@@ -606,8 +605,8 @@ footer img{
     }
 
     .btn-project i{
-    font-size: 16px;
-}
+        font-size: 16px;
+    }
 
     .btn-project-contact{
         display: none;
@@ -618,10 +617,29 @@ footer img{
         background-repeat:no-repeat;
         background-position:  right bottom;
         background-size: 100%;
-}
-   
+    }
+
+    .about{
+        padding: 0 24px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-col-1{
+        display: none;
+    }
+
+    .about-col-2 p{
+        text-align:left
+
+    }
+
+
     
- #services, #project, #contact, footer{
-    display: none;
- }
+    #services, #project, #contact, footer{
+        display: none;
+    }
 }
