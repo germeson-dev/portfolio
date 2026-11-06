@@ -179,6 +179,15 @@ nav ul li a:hover::after{
     
 }
 
+.project-contact{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
 .btn-project{
     display: flex;
     gap: 10px;
@@ -266,6 +275,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
     margin-right: 7%;
     font-size: 18px;
+    text-align: justify
 }
 
 .sub-title{
@@ -443,6 +453,7 @@ nav ul li a:hover::after{
     text-decoration: none;
 }
 
+
 .contact-left{
     padding-top: 10%;
 }
@@ -610,5 +621,7 @@ footer img{
 }
    
     
- 
+ #services, #project, #contact, footer{
+    display: none;
+ }
 }
