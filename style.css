@@ -251,6 +251,7 @@ nav ul li a:hover::after{
     color: #ababab;
 }
 
+
 .row{
     display: flex;
     justify-content: end;
@@ -286,7 +287,7 @@ nav ul li a:hover::after{
     font-size: 34px;
     font-weight: bold;
     color: #fff;
-    margin-top: 28px;
+    margin-top: 7%;
 }
 
 .tab-titles{
@@ -355,8 +356,12 @@ nav ul li a:hover::after{
     font-size: 34px;
     font-weight: bold;
     color: #fff;
-    padding-top: 120px;
+
 }
+
+.sub-title-services{
+    padding-top:14%
+    }
 
 .services-list div{
     background: #262626;
@@ -520,14 +525,20 @@ nav ul li a:hover::after{
 
 .contact-right form{
     width: 100%;
-    padding-top: 20%;
+    padding-top: 5%;
 }
 .container-project{
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around
 
+}
+
+.container-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contact-right p{
@@ -536,6 +547,7 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 21%
 }
 
 .contact-right p span{
@@ -702,25 +714,27 @@ footer img{
         margin-top: 100px;
     }
 
+
     #services{
         display: flex;
         height: 150%;
+    }
+
+    .sub-title-services{
+    padding-top:28%
     }
     
     #project{
         height: 150vh;
     }
 
+
     #contact{
-        height: 150vh;
+        height: 160vh;
         display: flex;
         margin-bottom: 30%;
     }
-    
-    .container-project{
-        flex-direction: column;
 
-    }
     .social-icons i{
         font-size: 45px;
         color: #1888F3
@@ -732,19 +746,23 @@ footer img{
 
     .contact-right{
         padding: 0 24px;
-        
+    }
+
+    .container-contact{
+        display: flex;
+        flex-direction:column;
     }
 
      .contact-right form{
         width: 100%;
-        padding-top: 12%;
     }
 
     .btn-form{
         padding: 8px 18px;
-        font-size: 14px;
+        font-size: 14px;        
     }
 
+ 
     footer p{
         font-size: 10px;
     }
