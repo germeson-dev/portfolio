@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
 }
 
 body{
@@ -133,8 +134,7 @@ nav ul li a:hover::after{
     font-size: 60px;
 }
 
-
-.container{
+#home{
     width: 100%;
     height: 100vh;
 } 
@@ -178,6 +178,10 @@ nav ul li a:hover::after{
     gap: 8px;
     
 }
+
+#project{
+        height: 100vh;
+    }
 
 .project-contact{
     margin: 50px 0;
@@ -267,7 +271,7 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 60%;
-    margin-top: 80px;
+    margin-top: 45px;
 }
 
 .about-col-2 p{
@@ -279,9 +283,10 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-    font-size: 60px;
+    font-size: 34px;
     font-weight: bold;
     color: #fff;
+    margin-top: 28px;
 }
 
 .tab-titles{
@@ -334,6 +339,7 @@ nav ul li a:hover::after{
 }
 
 #services{
+    height: 100vh;
     padding: 30px 0;
     padding: 0 10%
 }
@@ -342,14 +348,14 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin: 55px 0;
 }
 
 .sub-title-about {
-    font-size: 60px;
+    font-size: 34px;
     font-weight: bold;
     color: #fff;
-    padding-top: 15%;
+    padding-top: 120px;
 }
 
 .services-list div{
@@ -364,11 +370,13 @@ nav ul li a:hover::after{
     background: #1888F3;
     cursor: pointer;
     transform: translateY(-10px);
+    color: #000
 }    
 
 .services-list div h2{
     font-size: 30px;
     font-weight: bold;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
@@ -378,13 +386,19 @@ nav ul li a:hover::after{
     font-size: 16px;    
 }
 
+
 .services-list div p{
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-.container-project{
-    padding: 5% 10% 0 10%;
+.services-list i{
+    font-size: 35px;
+    color: #fff;
+}
+
+.services-list i{
+    color: #000;
 }
 
 .work-list{
@@ -419,7 +433,7 @@ nav ul li a:hover::after{
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.1));
     border-radius: 10px;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -454,8 +468,13 @@ nav ul li a:hover::after{
 }
 
 
+#contact{
+    height: 100vh;
+}
+
 .contact-left{
-    padding-top: 10%;
+    align-items: center;
+    padding-top: 50px
 }
 
 .contact-right{
@@ -473,6 +492,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     text-decoration: none;
+    gap: 20px;
 }
 
 .contact-left p a:hover{
@@ -481,28 +501,50 @@ nav ul li a:hover::after{
 
 .social-icons{
     margin: 50px 0;
+    display: flex;
+    gap: 38px;
 }
 
-/* .svg-inline--fa{
-    font-size: 45px;
-    margin-right: 15px;
-    display: inline-block;
-    margin-bottom: 0;
+.social-icons i{
     color: #ababab;
-    text-decoration: none;
+    font-size: 45px;
     transition: transform 0.5s;
+    
+}
 
-} */
-
-/* .svg-inline--fa:hover{
+.social-icons a i:hover{
     color: #1888F3;
-    transform: translateY(-5px); 
-} */
+    transform: translateY(-5px);
+}
+
 
 .contact-right form{
     width: 100%;
-    padding-top: 30%;
+    padding-top: 20%;
 }
+.container-project{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-around
+
+}
+
+.contact-right p{
+    padding: 0 20px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-right p span{
+color: #1888F3;
+border: 2px solid #1888F3;
+padding: 8px 12px;
+font-size: 16px;
+}
+
 
 form input, form textarea{
     width: 100%;
@@ -518,30 +560,36 @@ form input, form textarea{
 
 .row-contact{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
 }
 
 .btn-form{
-    display: block;
+    display: flex;
+    gap: 8px;
     margin-left: 10px;
     width: fit-content;
     border: 1px solid #1888F3;
-    padding: 14px 50px;
+    padding: 14px 30px;
     border-radius: 3px;
     text-decoration: none;
-    color: #fff;
-    background: #1888F3;;
+    color: #1888F3;
+    background: #000;;
     font-size: 18px;
     transition: background 0.5s, transform 0.5s;
 }
 
 .btn-form:hover{
-    background: #000;
-    color: #1888F3;
+    background: #1888F3;
+    color: #000;
     cursor: pointer;
     transform: translateY(-5px);
+}
+
+.btn-form i{
+    font-size: 25px;
 }
 
 footer{
@@ -639,9 +687,66 @@ footer img{
 
     }
 
+    .sub-title-about{
+        font-size: 34px;
+    }
 
+    #home{
+        height: 100vh;
+    }
+
+    #about{
+        height: 160vh;
+    }
+    .sub-title{
+        margin-top: 100px;
+    }
+
+    #services{
+        display: flex;
+        height: 150%;
+    }
     
-    #services, #project, #contact, footer{
-        display: none;
+    #project{
+        height: 150vh;
+    }
+
+    #contact{
+        height: 150vh;
+        display: flex;
+        margin-bottom: 30%;
+    }
+    
+    .container-project{
+        flex-direction: column;
+
+    }
+    .social-icons i{
+        font-size: 45px;
+        color: #1888F3
+    }
+
+    .contact-left p i{
+        font-size: 25px;
+    }
+
+    .contact-right{
+        padding: 0 24px;
+        
+    }
+
+     .contact-right form{
+        width: 100%;
+        padding-top: 12%;
+    }
+
+    .btn-form{
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 10px;
     }
 }
+

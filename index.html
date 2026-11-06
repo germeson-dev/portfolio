@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Germeson Martins | Full Stack Developer</title>
 </head>
@@ -25,7 +28,7 @@
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
-  
+
         <aside>
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -34,7 +37,7 @@
                     <a href="#about" onclick="closeNav()">Sobre</a>
                     <a href="#services" onclick="closeNav()">Serviços</a>
                     <a href="#project" onclick="closeNav()">Projetos</a>
-                    <a href="#contact" onclick="closeNav()">Contatos</a>
+                    <a href="#contact" onclick="closeNav()">Contato</a>
                 </div>
             </div>
             <button class="nav-button" onclick="openNav()"><i class="fa-solid fa-bars fa-2x"></i></button>
@@ -47,8 +50,10 @@
             <h1>Olá, sou o <span>Germeson</span>!<br></h1>
             <p class="headline">Transformando ideias em soluções reais.</p>
             <div class="header-contact">
-                <a href="#project" class="btn-project">Ver Projetos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="#contact" class="btn-project-contact">Fazer Orçamento Gratuito <i class="fa-solid fa-calculator"></i></a>
+                <a href="#project" class="btn-project">Ver Projetos <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#contact" class="btn-project-contact">Fazer Orçamento Gratuito <i
+                        class="fa-solid fa-turn-down"></i></a>
             </div>
         </div>
     </main>
@@ -98,7 +103,8 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Full Stack PRO - Sujeito Programador</span><br>Especialização | 2025 - Atual</li>
-                            <li><span>Análise e Desenvolvimento de Sistemas - Estácio</span><br>Graduação | 2021 - 2024<br></li>
+                            <li><span>Análise e Desenvolvimento de Sistemas - Estácio</span><br>Graduação | 2021 -
+                                2024<br></li>
                             <li><span>Idiomas</span><br>Português - Nativo<br>Inglês - Básico</li>
                         </ul>
                     </div>
@@ -112,31 +118,31 @@
             <h1 class="sub-title-about">Meus Serviços</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-laptop-code fa-2x"></i>
                     <h2>Desenvolvimento Web</h2>
                     <p>Criação de interfaces modernas, responsivas e intuitivas, utilizando HTML, CSS, JavaScript e
                         React, com foco em boas práticas, acessibilidade e experiência do usuário.</p>
-                    <a href="#">Saiba mais</a>
+                    <a href="#contact">Saiba mais</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop"></i>
+                    <i class="fa-solid fa-crop-simple fa-2x"></i>
                     <h2>UI/UX Design</h2>
                     <p>Criação de interfaces modernas, intuitivas e responsivas, aplicando princípios de UI/UX para
                         proporcionar uma experiência clara, agradável e acessível.</p>
-                    <a href="#">Saiba mais</a>
+                    <a href="#contact">Saiba mais</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
                     <h2>Interfaces Mobile</h2>
                     <p>Criação de interfaces modernas e responsivas para aplicativos, aplicando princípios de UI/UX para
                         garantir usabilidade, consistência e uma boa experiência em diferentes dispositivos.</p>
-                    <a href="#">Saiba mais</a>
+                    <a href="#contact">Saiba mais</a>
                 </div>
 
             </div>
             <div class="project-contact">
                 <a href="#project" class="btn-project">Ver Projetos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="#contact" class="btn-project-contact">Fazer Orçamento Gratuito <i class="fa-solid fa-calculator"></i></a>
+                <a href="#contact" class="btn-project-contact">Fazer Orçamento Gratuito <i class="fa-solid fa-turn-down"></i></a>
             </div>
         </div>
     </section>
@@ -189,28 +195,25 @@
             <div class="row-contact">
                 <div class="contact-left">
                     <h1 class="sub-title">Entre em Contato</h1>
-                    <p><a href="mailto:germeson-dev@outlook.com"><i
-                                class="fa-solid fa-paper-plane"></i>germeson-dev@outlook.com</a></p>
-                    <p><a href="tel:+5511940547947"><i class="fa-solid fa-square-phone-flip"></i>+55 11 94054-7947</a>
-                    </p>
+                    <p><a href="mailto:germeson-dev@outlook.com"><i class="fa-solid fa-paper-plane fa-2x"></i>germeson-dev@outlook.com</a></p>
+                    <p><a href="tel:+5511940547947"><i class="fa-solid fa-square-phone-flip fa-2x"></i>+55 11 94054-7947</a></p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/germeson-dev/" title="Conecte comigo no LinkedIn"
-                            target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
-                        <a href="https://github.com/germeson-dev/" title="Me siga no GitHub" target="_blank"><i
-                                class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.instagram.com/germeson_dev/" title="Me siga no Instagram"
-                            target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/germeson-dev/" title="Conecte comigo no LinkedIn" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/germeson-dev/" title="Me siga no GitHub" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                        <a href="https://www.instagram.com/germeson_dev/" title="Me siga no Instagram"target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="https://www.x.com/germeson_dev/" title="Me siga no X"target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
                     </div>
-                    <a href="assets/Germeson_Martins_Front-End_Developer.pdf" download class="btn-project">Download
-                        CV</a>
                 </div>
+                    <a href="assets/Germeson_Martins_Front-End_Developer.pdf" download class="btn-project-contact">Download CV <i class="fa-solid fa-download"></i></a>
+            </div>
                 <div class="contact-right">
+                    <p id="wpp">Preencha o formulário abaixo e envie sua mensagem pelo WhatsApp. <br><br> <span>Vamos tirar seu projeto do papel!</span></p>
                     <form id="form" onsubmit="envwpp(event)">
                         <input type="text" name="name" id="nome" placeholder="Seu nome" required />
                         <input type="email" name="email" id="email" placeholder="Seu e-mail@dominio.com" required />
                         <textarea name="message" rows="10" id="message" placeholder="Olá! Como posso ajudar?"
                             required></textarea>
-                        <button class="btn-form" type="submit">Enviar WhatsApp</button>
+                        <button class="btn-form" type="submit">Enviar WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
                     </form>
                 </div>
             </div>
@@ -221,14 +224,6 @@
         <p>2026 &copy Todos os direitos reservados.</p>
     </footer>
 
-    <!-- <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://kit.fontawesome.com/801db3d3f8.js" crossorigin="anonymous"></script>
-    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
-     -->
-    
-    
-    
-    
     <script src="script.js"></script>
 </body>
 
