@@ -585,7 +585,7 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 21%
+    margin-top: 10px;
 }
 
 .contact-right p span{
@@ -625,6 +625,7 @@ form input, form textarea{
     padding: 14px 30px;
     border-radius: 3px;
     text-decoration: none;
+    align-items: center;
     color: #1888F3;
     background: #000;;
     font-size: 18px;
