@@ -88,9 +88,13 @@ nav ul li a:hover::after{
 }
 
 .overlay{
-    width: 0;
-    height: 100%;
     background-color: #000;
+    width: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     z-index: 9;
     position: fixed;
     right: 0;
@@ -98,28 +102,46 @@ nav ul li a:hover::after{
     transition: all 0.3s;
     z-index: 10;
 }
-
-.overlay-content{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    top: 18%;
+.overlay a{
+    color: #ababab;
+    text-decoration: none;
 }
 
-.overlay a{
-    padding: 8px;
+.overlay-content{
+    width: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    top: 10%;
+}
+
+.overlay-content a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 12px 20px;
     text-decoration: none;
     color: #ababab;
-    display: block;
-    font-size: 28px;
+    display: flex;
+    font-size: 20px;
     margin-top: 30px;
-    transition: 0.5s;
+    transition: 0.5s;  
+}
+
+.overlay-content a i{
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center
 }
 
 .overlay a:hover{
     color: #1888F3;
-    
 }
+
 .overlay a:active{
     color: #1888F3;
 }
@@ -127,6 +149,7 @@ nav ul li a:hover::after{
 .overlay a:focus{
     color: #1888F3;
 }
+
 .overlay .closebtn{
     position: absolute;
     top: 0px;
@@ -146,11 +169,10 @@ nav ul li a:hover::after{
     background-size: 68%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     position: absolute;
     padding-left: 10%;
     font-weight: bold;
-
 }
 
 .header-text h1{
@@ -160,6 +182,7 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #1888F3;
+    font-size: 85px;
 }
 
 .headline{
@@ -168,6 +191,9 @@ nav ul li a:hover::after{
     color: #EFF0F4;
     font-style:italic;
     font-weight: normal;
+    border-left: 2px solid #1888F3;
+    padding-left: 5px;
+    padding-right: 25%
 }
 
 .header-contact{
@@ -176,12 +202,11 @@ nav ul li a:hover::after{
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
-    
 }
 
 #project{
-        height: 100vh;
-    }
+    height: 100vh;
+}
 
 .project-contact{
     margin: 50px 0;
@@ -198,12 +223,11 @@ nav ul li a:hover::after{
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    background-color: #1888F3;
-    border: 1px solid #ababab;
+    background-color: #0083fd;
     padding: 18px 28px;
-    border-radius: 3px;
+    border-radius: 35px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 18px;
     transition: background 0.5s, transform 0.5s;
 }
@@ -213,7 +237,7 @@ nav ul li a:hover::after{
     color: #1888F3;
     border: 1px solid #1888F3;
     cursor: pointer;
-    transform: translateY(-5px);
+    transform: translateY(5px);
 }
 
 .btn-project i{
@@ -230,7 +254,7 @@ nav ul li a:hover::after{
     align-items: center;
     text-align: center;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 35px;
     font-size: 18px;
     transition: background 0.5s, transform 0.5s;
 }
@@ -243,7 +267,26 @@ nav ul li a:hover::after{
     background-color: #1888F3;
     color: #000;
     border: 1px solid #000;
-    transform: translateY(-5px);
+    transform: translateY(5px);
+}
+
+.social-icons-header{
+    position: absolute;
+    width: 540px;
+    display: flex;
+    justify-content: start;
+    padding: 15px 25px;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.social-icons-header i{
+    color: #ababab;
+    font-size: 30px;
+}
+
+.social-icons-header i:hover{
+    color:#0083fd;
 }
 
 #about{
@@ -356,7 +399,6 @@ nav ul li a:hover::after{
     font-size: 34px;
     font-weight: bold;
     color: #fff;
-
 }
 
 .sub-title-services{
@@ -438,7 +480,6 @@ nav ul li a:hover::after{
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.1));
     border-radius: 10px;
-    /* position: absolute; */
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -471,7 +512,6 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-decoration: none;
 }
-
 
 #contact{
     height: 100vh;
@@ -514,14 +554,12 @@ nav ul li a:hover::after{
     color: #ababab;
     font-size: 45px;
     transition: transform 0.5s;
-    
 }
 
 .social-icons a i:hover{
-    color: #1888F3;
+    color: #fff;
     transform: translateY(-5px);
 }
-
 
 .contact-right form{
     width: 100%;
@@ -635,20 +673,31 @@ footer img{
 
     .social-icons-lateral{
         display: flex;
-        padding-top: 150px;
-        gap: 8px;
+        gap: 20px;
         align-items: center;
         justify-content: center;
 
     }
 
+    .social-icons-lateral a i:hover{
+        color:#1888F3;
+    }
+
     .social-icons-lateral i{
-        font-size: 25px;
+        font-size: 35px;
         color:#ababab;
+    }
+    .btn-contact-lateral{
+        border: 1px solid #0083fd;
+        padding: 12px 20px;
+        border-radius: 25px;
+    }
+
+    .header-text-lateral a:hover{
+        color: #fff
     }
     .contact-lateral p a{
         font-size: 10px;
-        
     }
 
     .header-inf{
@@ -657,13 +706,23 @@ footer img{
         margin-top: 30px;
     }
 
+    .header-text{
+        margin-top: 20%
+    }
+
     .header-text h1{
         font-size: 45px;
         margin-bottom: 25px;
     }
+
+    .header-text h1 span{
+        font-size: 60px
+
+    }
     .headline{
         font-size: 24px;
         margin-top: 35px;
+        padding-right: 50%;
     }
 
     .header-contact{
@@ -680,11 +739,15 @@ footer img{
         padding: 14px 24px;
         font-size: 18px;
         background-color: #000;
-        color: #1888F3;
+        color: #fff;
+        border: 1px solid #0083fd;
     }
 
     .btn-project i{
         font-size: 16px;
+    }
+    .social-icons-header{
+        display: none;
     }
 
     .btn-project-contact{
@@ -715,7 +778,6 @@ footer img{
         text-align:left;
         font-size: 16px;
         margin-right: 18px;
-
     }
 
     .sub-title-about{
@@ -733,7 +795,6 @@ footer img{
         margin-top: 100px;
     }
 
-
     #services{
         display: flex;
         height: 150%;
@@ -746,7 +807,6 @@ footer img{
     #project{
         height: 150vh;
     }
-
 
     #contact{
         height: 160vh;
@@ -787,13 +847,44 @@ footer img{
     }
 }
 
-@media screen and (max-width: 440px){
-    .social-icons-lateral{
-        padding-top: 180px;
+@media screen and (max-width: 500px){
+    .header-text{
+        margin-top: 25%
+    }
+
+    .overlay{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overlay-content{
+        margin-top: 20%
+    }
+    .overlay-content a{
+        font-size: 14px;
+    }
+
+    .overlay-content a i{
+        font-size: 20px;
     }
 
     .social-icons-lateral i{
-        font-size: 35px;
+        font-size: 25px;
+    }
+    
+    .btn-project{
+        font-size: 12px;
+    }
+    .social-icons-header{
+        display: none;
+    }
+
+    .header-text-lateral{
+        margin-bottom: 10%;
+    }
+
+    .btn-contact-lateral{
+        font-size: 12px;
     }
 
     .tab-contents{
@@ -817,6 +908,12 @@ footer img{
 
     .contact-right p span{
         font-size: 14px;
+    }
+
+    .headline{
+        font-size: 20px;
+        margin-top: 25px;
+        padding-right: 20px;
     }
 
     footer{
