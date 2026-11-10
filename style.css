@@ -198,12 +198,11 @@ nav ul li a:hover::after{
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    background-color: #1888F3;
-    border: 1px solid #ababab;
+    background-color: #0083fd;
     padding: 18px 28px;
-    border-radius: 3px;
+    border-radius: 35px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 18px;
     transition: background 0.5s, transform 0.5s;
 }
@@ -213,7 +212,7 @@ nav ul li a:hover::after{
     color: #1888F3;
     border: 1px solid #1888F3;
     cursor: pointer;
-    transform: translateY(-5px);
+    transform: translateY(5px);
 }
 
 .btn-project i{
@@ -230,7 +229,7 @@ nav ul li a:hover::after{
     align-items: center;
     text-align: center;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 35px;
     font-size: 18px;
     transition: background 0.5s, transform 0.5s;
 }
@@ -243,7 +242,7 @@ nav ul li a:hover::after{
     background-color: #1888F3;
     color: #000;
     border: 1px solid #000;
-    transform: translateY(-5px);
+    transform: translateY(5px);
 }
 
 #about{
