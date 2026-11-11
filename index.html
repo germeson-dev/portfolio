@@ -228,10 +228,10 @@
                 <p>Vamos conversar?</p>
                 <p id="wpp">Preencha o formulário abaixo e envie sua mensagem pelo WhatsApp. <br><br> <span>Vamos tirar seu projeto do papel!</span></p>
                 <form id="form" onsubmit="envwpp(event)">
-                    <input type="text" name="name" id="nome" placeholder="Seu nome" required />
-                    <input type="email" name="email" id="email" placeholder="Seu e-mail@dominio.com" required />
-                    <textarea name="message" rows="10" id="message" placeholder="Olá! Como posso ajudar?"
-                        required></textarea>
+                    <input type="text" name="name" id="nome" placeholder="Nome:" required />
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome:" required/>
+                    <input type="email" name="email" id="email" placeholder="E-mail: email@dominio.com" required />
+                    <textarea name="message" rows="10" id="message" placeholder="Olá! Como posso ajudar?" required></textarea>
                     <button class="btn-form" type="submit">Enviar WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
                 </form>
             </div>
