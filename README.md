@@ -24,5 +24,5 @@ Acesse o projeto online:
     <img src="https://img.shields.io/badge/Acessar%20Projeto-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Acessar projeto">
 </a>
 
-<!-- ## 🖥️ Demonstração
-<img src="assets/demo.png" alt="Demonstração"> -->
+## 🖥️ Demonstração
+<img src="assets/demo.png" alt="Demonstração">
